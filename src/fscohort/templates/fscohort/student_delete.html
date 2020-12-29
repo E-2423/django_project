@@ -5,6 +5,8 @@
     <p>Are you sure!!</p>
     {% csrf_token %}
     <input type="submit" value="Yes">
-    <a href="{% url 'list' %}">Hayır</a>
+    <a href="{% url 'list' %}">
+        <button>No</button>
+    </a>
 </form>
 {% endblock content %}
